@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Ecommerce Template</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="header">
+      <div class="mobile">
+      
+        <a id="bar" class="fas fa-outdent"></a>
+      </div>
+      <a href="#"><img src="img/logo.png" alt="logo" width="90" height="60" /></a>
+      <nav>
+        <ul id="navbar" class="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="shop.html">Xfein Men</a></li>
+            <li><a href="blog.html">Xfein Women</a></li>
+            
+            <!-- Search bar -->
+            <li>
+                <form class="search-form" action="search.html" method="GET">
+                    <input type="text" placeholder="Search..." name="q" />
+                    <button type="submit"><i class="fa-solid fa-search"></i></button>
+                </form>
+            </li>
+    
+            <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            
+            
+            <!-- User Dropdown -->
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-user-circle"></i>
+                </a>
+                <!-- Dropdown menu -->
+                <div class="dropdown-menu" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="profile.html">My Account</a>
+                    <a class="dropdown-item" href="orders.html">Order</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="login.html">Logout</a>
+                </div>
+            </div>
+    
+            <a href="#" id="close"><i class="fas fa-times"></i></a>
+        </ul>
+      </nav>
+      <div class="mobile">
+
+       
+        
+        <a href="cart.html"><i class="fa-solid fa-search"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+       
+        
+        <a href="login.html"><i class="fa-solid fa-user-circle"></i></a>
+        
+       
+      </div>
+    </section>
+
+
+
+
+        <!-- Replace the existing cart section in your HTML with the provided code -->
+    <section class="cart">
+        <div class="container" style="padding-top: 50px;">
+            <div class="row">
+                
+                
+                
+                <div class="col-sm-8">
+                  <section class="bannerss section-m1">
+                    <div class="container">
+                        <div class="fixed-width text-center">
+                            <h4 class="fw-bold">Cart</h4>
+                        </div>
+                    </div>
+                </section>
+                  <hr>
+                
+                  
+                    <div class="card">
+                        <div class="card-body bg-dark">
+                            
+
+                            
+                            
+                            <!-- Replace Django for loop with static content -->
+
+                            <div class="row shadow-sm mb-3">
+                              <div class="col-sm-2 col-4">
+                                  <img src="img/products/f1.jpg" alt="" srcset="" class="img-fluid" height="250" width="250">
+                              </div>
+                          
+                              <div class="col-sm-7 col-8">
+                                  <h5><b>Product&nbsp; :</b> Product Title</h5>
+                                  <h5><b>Product&nbsp; :</b> Product Title</h5>
+                                  <div class="custom-block">
+                                    <label for="quantity">Quantity:</label>
+                                    <a class="minus-cart btn" pid="product_id"><i class="text-light fas fa-minus-square fa-lg"></i></a>
+                                    <span id="quantity">1</span>
+                                    <a class="plus-cart btn" pid="product_id"><i class="text-light fas fa-plus-square fa-lg"></i></a>
+                                </div>
+                                <h5><b>Size&nbsp; &nbsp; &nbsp; :</b>     20</h5>
+                                <h5><b>Color &nbsp; &nbsp; &nbsp; :</b>   Red</h5>
+                                
+                                 
+                              </div>
+                          
+                              <div class="col-sm-3 col-12 fw-bold">
+                                <div class=" text-sm-start">
+                                  
+                                    <a href="#" class="btn btn-sm btn-secondary mr-3 remove-cart" pid="product_id">Remove</a>
+                                </div>
+                                
+                            </div>
+                            </div>
+                          
+
+                         
+                         
+                        
+
+                        
+      
+                            
+                            
+                            
+                            
+                            <!-- End of Django for loop replacement -->
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-4">
+                  <section class="bannerss section-m1">
+                    <div class="scroll-container">
+                      <h4 class="fw-bold">Summary</h4>
+                    </div>
+                  </section>
+                 
+                    <hr>
+                    <div class="card">
+                        <div class="card-body bg-dark">
+                            
+                            <ul class="list-group bg-dark">
+                                <h5 class="bg-dark list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                                    Amount<span>रु. <span id="amount">Total Amount</span></span>
+                                </h5>
+                                <h5 class="bg-dark list-group-item d-flex justify-content-between align-items-center px-0">
+                                    Shipping<span>रु. 60.00</span>
+                                </h5>
+                                <h5 class="bg-dark list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                                    <div>
+                                        <strong>Total</strong> <small>(including VAT)</small>
+                                    </div>
+                                    <span><strong>रु. <strong id="totalamount">Total Amount</strong></strong></span>
+                                </h5>
+                            </ul>
+                            <div class="d-grid"><a href="checkout.html" class="btn btn-primary">Place Order</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container my-3">
+                  <div class="row">
+                      <div class="col-sm-8">
+                          <div class="card ">
+                              <div class="card-body bg-dark">
+                                  <h5 class="mb-4">We accept Online Payment Soon. Now Cash Only</h5>
+                                  <img src="path/to/your/payment/image.png" alt="" class="img-fluid">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-4">
+                          <div class="card">
+                              <div class="card-body bg-dark">
+                                  <p class="mx-3"> You Can place order and we are delivering goods then we are taking cash.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <section>
+
+                    <hr>
+                </section>
+            </div>
+
+
+            <section class="product1 section-p1">
+      
+
+      
+              
+              <h3>Recommended For You </h3>
+              <div class="product1__container">
+                <div class="pro">
+                  <a href="details.html">
+                      <img src="img/products/f1.jpg" alt="Product Image" />
+                      <div class="desc">
+                          <span></span>
+                          <h5>Cartoon Astronaut T-shirt</h5>
+                          <h4>$78</h4>
+                      </div>
+                      <i class="fas fa-shopping-cart cart"></i>
+                   
+                 </a>
+                </div>
+                
+                <div class="pro">
+                  <a href="#">
+                      <img src="img/products/f1.jpg" alt="Product Image" />
+                      <div class="desc">
+                          <span></span>
+                          <h5>Cartoon Astronaut T-shirt</h5>
+                          <h4>$78</h4>
+                      </div>
+                      <i class="fas fa-shopping-cart cart"></i>
+                   
+                 </a>
+                </div>
+                <div class="pro">
+                  <a href="#">
+                      <img src="img/products/f1.jpg" alt="Product Image" />
+                      <div class="desc">
+                          <span></span>
+                          <h5>Cartoon Astronaut T-shirt</h5>
+                          <h4>$78</h4>
+                      </div>
+                      <i class="fas fa-shopping-cart cart"></i>
+                   
+                 </a>
+                </div>
+                <div class="pro">
+                  <a href="#">
+                      <img src="img/products/f1.jpg" alt="Product Image" />
+                      <div class="desc">
+                          <span></span>
+                          <h5>Cartoon Astronaut T-shirt</h5>
+                          <h4>$78</h4>
+                      </div>
+                      <i class="fas fa-shopping-cart cart"></i>
+                   
+                 </a>
+                </div>
+                <div class="pro">
+                  <a href="#">
+                      <img src="img/products/f1.jpg" alt="Product Image" />
+                      <div class="desc">
+                          <span></span>
+                          <h5>Cartoon Astronaut T-shirt</h5>
+                          <h4>$78</h4>
+                      </div>
+                      <i class="fas fa-shopping-cart cart"></i>
+                   
+                 </a>
+                </div>
+                <div class="pro">
+                  <a href="#">
+                      <img src="img/products/f1.jpg" alt="Product Image" />
+                      <div class="desc">
+                          <span></span>
+                          <h5>Cartoon Astronaut T-shirt</h5>
+                          <h4>$78</h4>
+                      </div>
+                      <i class="fas fa-shopping-cart cart"></i>
+                   
+                 </a>
+                </div>
+                <div class="pro">
+                  <a href="#">
+                      <img src="img/products/f1.jpg" alt="Product Image" />
+                      <div class="desc">
+                          <span></span>
+                          <h5>Cartoon Astronaut T-shirt</h5>
+                          <h4>$78</h4>
+                      </div>
+                      <i class="fas fa-shopping-cart cart"></i>
+                   
+                 </a>
+                </div>
+                <div class="pro">
+                  <a href="#">
+                      <img src="img/products/f1.jpg" alt="Product Image" />
+                      <div class="desc">
+                          <span></span>
+                          <h5>Cartoon Astronaut T-shirt</h5>
+                          <h4>$78</h4>
+                      </div>
+                      <i class="fas fa-shopping-cart cart"></i>
+                   
+                 </a>
+                </div>
+              </div>
+            </section>
+
+
+        </div>
+    </section>
+  
+
+
+    
+
+    <footer class="section-p1">
+      <div class="col">
+        <img src="img/logo.png" alt="logo" width="90" height="60" />
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>562 Wellington Road, Street 32, San Francisco</p>
+        <p><strong>Phone: </strong>+01 2222 365/(+91) 01 2345 6789</p>
+        <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</p>
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+      
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">Track My Orders</a>
+        <a href="#">Help</a>
+      </div>
+
+
+     
+
+      <div class="copyright">
+        <p>&#169; 2023, Xfein Store - Best Deals Every Day</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 400px;
+    margin: 7px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+    display: none;
+}
+
+.form label {
+    text-align: left;
+}
+
+.form.active {
+    display: block;
+}
+
+h2 {
+    color: #dc362e;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+.pass-reset {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.pass-reset input {
+    width: calc(100% - 20px);
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.pass-reset a {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #dc362e;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn {
+    background-color: #dc362e;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-gogle-auth {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.btn-gogle-auth:hover {
+    border-color: #bbb;
+}
+
+.or {
+    margin: 20px 0;
+    font-weight: bold;
+    color: #555;
+}
+
+.google {
+    margin-right: 10px;
+    color: #dd4b39;
+    font-size: 24px;
+}
